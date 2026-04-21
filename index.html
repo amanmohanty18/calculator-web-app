@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A professional online calculator for basic math operations — addition, subtraction, multiplication, and division." />
+  <title>Calculator — Professional Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <main class="wrapper">
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-icon">⌗</span>
+        <span class="logo-text">CalcPro</span>
+      </div>
+    </header>
+
+    <div class="calculator" role="application" aria-label="Calculator">
+
+      <div class="display">
+        <div id="expression" class="expression" aria-live="polite"></div>
+        <div id="display" class="result" aria-live="assertive">0</div>
+      </div>
+
+      <div class="buttons" role="grid">
+
+        <button class="btn utility span-two" onclick="clearDisplay()" aria-label="All Clear">AC</button>
+        <button class="btn utility" onclick="backspace()" aria-label="Backspace">⌫</button>
+        <button class="btn operator" onclick="inputOperator('/')" aria-label="Divide">÷</button>
+
+        <button class="btn digit" onclick="inputDigit('7')">7</button>
+        <button class="btn digit" onclick="inputDigit('8')">8</button>
+        <button class="btn digit" onclick="inputDigit('9')">9</button>
+        <button class="btn operator" onclick="inputOperator('*')" aria-label="Multiply">×</button>
+
+        <button class="btn digit" onclick="inputDigit('4')">4</button>
+        <button class="btn digit" onclick="inputDigit('5')">5</button>
+        <button class="btn digit" onclick="inputDigit('6')">6</button>
+        <button class="btn operator" onclick="inputOperator('-')" aria-label="Subtract">−</button>
+
+        <button class="btn digit" onclick="inputDigit('1')">1</button>
+        <button class="btn digit" onclick="inputDigit('2')">2</button>
+        <button class="btn digit" onclick="inputDigit('3')">3</button>
+        <button class="btn operator" onclick="inputOperator('+')" aria-label="Add">+</button>
+
+        <button class="btn digit" onclick="toggleSign()" aria-label="Toggle sign">+/−</button>
+        <button class="btn digit" onclick="inputDigit('0')">0</button>
+        <button class="btn digit" onclick="inputDecimal()">.</button>
+        <button class="btn equals" onclick="calculate()" aria-label="Equals">=</button>
+
+      </div>
+
+
+    </div>
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
