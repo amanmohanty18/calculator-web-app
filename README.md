@@ -67,7 +67,8 @@ git clone https://github.com/your-username/calculator-web-app.git
 
 ## 📸 Screenshots
 
-*(Optional – you can add images later)*
+
+![Calculator UI](assets/screenshot.png)
 
 ---
 
